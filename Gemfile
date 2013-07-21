@@ -6,8 +6,10 @@ gem 'thin'          , group: :production
 
 gem 'mongoid'       , github: 'mongoid/mongoid'
 
+
 gem 'newrelic_rpm'
 gem 'omniauth-twitter'  , '~>1.0.0'
+gem 'font-awesome-sass-rails'
 
 gem 'sass-rails'    , '~> 4.0.0'
 gem 'haml-rails'    , '~> 0.4'

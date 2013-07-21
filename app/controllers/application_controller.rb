@@ -20,3 +20,9 @@ class ApplicationController < ActionController::Base
   end
 
 end
+
+class ApplicationController::Protected < ApplicationController
+  layout 'application_protected'
+  before_action :ensure_login
+end
+
