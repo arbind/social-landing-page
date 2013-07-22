@@ -74,6 +74,14 @@ body {
     clear: both;
     width:80%;
     margin: 0 10%;
+    text-align: center;
+    img{
+      margin: 0 auto;
+      display: inline-block;
+      @include border-radius(10%);
+      width: 48px;
+      height: 48px;
+    }
     .food-truck {
       clear: both;
       margin: 0 auto;
@@ -81,15 +89,25 @@ body {
       .name{
         margin: 0 auto;
         text-align: center;
-        font: bold 42px/60px "Lucida Grande";
+        font: bold 42px/60px "Helvetica Neue",Arial,sans-serif;
       }
-      img{
-        margin: 0 auto;
-        display: inline-block;
-        @include border-radius(10%);
-        width: 48px;
-        height: 48px;
-      }
+    }
+    .thank-you {
+      font: bold 24px/30px "Helvetica Neue",Arial,sans-serif;
+    }
+    .launching-soon {
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .keep-in-touch {
+      margin: 0 0 20px 0;
+    }
+
+    .value {
+      font: bold 24px/30px "Helvetica Neue",Arial,sans-serif;
+    }
+    .send-feedback {
+      margin: 20px 0 0 0;
     }
   }
 }
