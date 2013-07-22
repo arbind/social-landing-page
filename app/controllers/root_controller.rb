@@ -8,6 +8,8 @@ class RootController < ApplicationController
 
   def oauth_sign_in() redirect_to dashboard_path  end
 
+  def ping() render json: :pong end
+
   protected
 
   def sign_in
