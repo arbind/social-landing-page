@@ -3,9 +3,10 @@ source 'https://rubygems.org'
 ruby "2.0.0"
 gem 'rails'         , '~>4.0.0'
 gem 'thin'          , group: :production
+gem 'rails_12factor', group: :production
 
 gem 'mongoid'       , github: 'mongoid/mongoid'
-gem 'eventmachine'  , :require => 'em/pure_ruby'
+gem 'eventmachine'
 
 gem 'newrelic_rpm'
 gem 'omniauth-twitter'  , '~>1.0.0'
