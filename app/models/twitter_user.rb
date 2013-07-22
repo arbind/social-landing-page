@@ -11,6 +11,7 @@ class TwitterUser
   field :address
   field :description
   field :twitter_account_created_at
+  field :signins, type: Integer, default: 0
 
   index({twitter_id: 1}, { unique: true, sparse: true })
 end

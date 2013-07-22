@@ -1,7 +1,8 @@
 !!!
 %html
   %head
-    %title Food Truck
+    %title Food-Truck.me
+    <meta charset="utf-8"/>
     %meta{name: :viewport, content: "width=device-width, initial-scale=1, maximum-scale=1"}
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
@@ -9,11 +10,9 @@
   %body.protected{lang: :en}
     %header
       = render '/shared/logo'
-      %h1= current_user.name
-      =image_tag(current_user.image, alt: current_user.name, class: :avatar)
-      %a.button{href: signout_path, title: 'logout'}
-        %i.icon-angle-left
-        %label sign out
+      / %a.button{href: signout_path, title: 'logout'}
+      /   %i.icon-angle-left
+      /   %label sign out
     %p
     - flash.each do |name, msg|
       %div(class=name)= msg
@@ -21,3 +20,4 @@
     = yield
 
     %footer
+      = render 'shared/twitter_follow_button'

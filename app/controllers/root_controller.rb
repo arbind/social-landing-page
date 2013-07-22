@@ -14,12 +14,9 @@ class RootController < ApplicationController
     params = user_hash
     tid = params[:twitter_id]
     user = TwitterUser.where(twitter_id: tid).first_or_create
+    params[:signins] = user.signins + 1
     user.update_attributes(params)
     session[:current_user] = tid
-    p 'hash'
-    p oauth_hash
-    p 'info'
-    p oauth_info
   end
 
   def user_hash

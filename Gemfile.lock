@@ -154,6 +154,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   database_cleaner
+  eventmachine
   factory_girl
   font-awesome-sass-rails
   haml-rails (~> 0.4)

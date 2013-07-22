@@ -25,29 +25,20 @@ body {
   background: #FFF;
   color: rgb(60,60,60);
   -webkit-text-size-adjust: 100%; /* Prevent Mobile Safari auto-adjust of font-sizes */
+  background-image: url('/assets/textures/brickwall/brickwall.png')
 }
 
 body {
+  color: #437da7;
   width: 100%;
+  footer {
+    text-align: center;
+  }
   header {
+    overflow: visible;
+    margin: 32px 0;
     width: 100%;
-    padding: 0;
-    h1 {
-      width: 100%;
-      text-align: left;
-      margin: 18px;
-      height: 86px;
-      line-height: 86px;
-    }
-    .avatar{
-      position:absolute;
-      top: 2.5em;
-      right: 8px;
-      display: inline;
-      @include border-radius(10%);
-      width: 48px;
-      height: 48px;
-    }
+    text-align: center;
     .signout {
       position:absolute;
       top: 2.5em;
@@ -55,6 +46,48 @@ body {
       display: inline;
       height: 32px;
       line-height: 32px;
+    }
+  }
+  section.signup {
+    clear: both;
+    width:80%;
+    margin: 0 10%;
+    .tagline{
+      margin: auto;
+      text-align: center;
+      font: bold 42px/60px "Lucida Grande";
+      text-transform:capitalize;
+      text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+    }
+    .benefit {
+      margin: auto;
+      text-align: center;
+    }
+    .cta {
+      margin: 50px auto;
+      text-align: center;
+    }
+  }
+  section.dashboard {
+    clear: both;
+    width:80%;
+    margin: 0 10%;
+    .food-truck {
+      clear: both;
+      margin: 0 auto;
+      text-align: center;
+      .name{
+        margin: 0 auto;
+        text-align: center;
+        font: bold 42px/60px "Lucida Grande";
+      }
+      img{
+        margin: 0 auto;
+        display: inline-block;
+        @include border-radius(10%);
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 }

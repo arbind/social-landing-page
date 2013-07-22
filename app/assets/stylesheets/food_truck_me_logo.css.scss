@@ -1,8 +1,7 @@
 
 .food-truck-me-logo {
-  margin-left: 18px;
-  float: left;
   position: relative;
+  margin: 0 auto;
   overflow: visible;
   border:1px solid #93cdf7;
   padding: 2px;
@@ -34,12 +33,13 @@
   }
   .stars {
     position: relative;
+    z-index: 0;
     font-size: 10px;
     top: 10px;
     display:inline;
     padding: 1px;
     float: left;
-    color: red;
+    color: #E30E0E;
     &:last-child {
       margin-right: 8px;
     }
@@ -50,14 +50,15 @@
   }
   .badge {
     position: absolute;
+    z-index: 1;
     top: -14px;
     right: -14px;
-    background:             radial-gradient( 1px -11px, circle, white 8%, red 26px );
-    background:    -moz-radial-gradient( 1px -11px, circle, white 8%, red 26px );
-    background:     -ms-radial-gradient( 1px -11px, circle, white 8%, red 26px );
-    background:      -o-radial-gradient( 1px -11px, circle, white 8%, red 26px );
-    background: -webkit-radial-gradient( 1px -11px, circle, white 8%, red 26px );
-    background-color: red;
+    background:             radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+    background:    -moz-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+    background:     -ms-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+    background:      -o-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+    background: -webkit-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+    background-color: #E30E0E;
     border: 2px solid white;
     -moz-border-radius    : 50%;
     -webkit-border-radius : 50%;
@@ -69,5 +70,8 @@
     text-align: center;
     height: 20px;
     min-width: 14px;
+  }
+  .food-truck-me {
+    font: 12px/14px "Lucida Grande";
   }
 }

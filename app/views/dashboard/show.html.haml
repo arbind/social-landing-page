@@ -1,81 +1,46 @@
-%form
-  %fieldset
-    %legend Home Area for @#{current_user.screen_name}:
-    %input{type: :text, name: :countries, placeholder: :Country, list: :countries}
-    %input{type: :text, name: :state, placeholder: :State, list: :states}
-    %input{type: :text, name: :city, placeholder: :City}
+%section.dashboard
+  .food-truck
+    .name= current_user.name
 
-    %a.button{href: :save}
-      %i.icon-map-marker
-      %label set my home area
+  - if 1 ==current_user.signins
+    .thank-you Thanks for registering!
+    .value Our app notifies people of the places you park.
+    .launching-soon (launching soon)
+  - else
+    .thank-you Thanks for checking back!
+    .launching-soon We'll be launching soon.
+    .value Our app notifies people of the places you park.
+  .keep-in-touch Follow us on Twitter and we'll keep ya posted!
 
-%form
-  %fieldset
-    %legend Service Locations for @#{current_user.screen_name}:
-    %input{type: :text, name: :name, placeholder: "name of location"}
-    %input{type: :text, name: :location, placeholder: "location address"}
+  / .parking-spots
+  /   @#{current_user.screen_name} Parking Spots:
+  /   .value Our app will notify food truck lovers near places you park (10 mile radius).
+  /   .instructions Add the regular places you like to park.
+  /   %form
+  /     %input{type: :text, name: :name, placeholder: "name of location"}
+  /     %input{type: :text, name: :location, placeholder: "location address"}
 
-    %a.button{href: :save}
-      %i.icon-map-marker
-      %label add service location
+  /     %a.button{href: :save}
+  /       %i.icon-map-marker
+  /       %label add service location
 
+  / %form
+  /   =image_tag(current_user.image, alt: current_user.name)
+  /   Home Area for @#{current_user.screen_name}:
+  /   %input{type: :text, name: :countries, placeholder: :Country, list: :countries}
+  /   %input{type: :text, name: :state, placeholder: :State, list: :states}
+  /   %input{type: :text, name: :city, placeholder: :City}
 
-%datalist{id: :countries}
-  %option{value: "U.S."}
-  %option{value: "Canada"}
-  %option{value: "Australia"}
-  %option{value: "France"}
-  %option{value: "Germany"}
-  %option{value: "New Zealand"}
+  /   %a.button{href: :save}
+  /     %i.icon-map-marker
+  /     %label set my home area
 
-%datalist{id: :states}
-  %option{value: "Alabama"}
-  %option{value: "Alaska"}
-  %option{value: "Arizona"}
-  %option{value: "Arkansas"}
-  %option{value: "California"}
-  %option{value: "Colorado"}
-  %option{value: "Connecticut"}
-  %option{value: "Delaware"}
-  %option{value: "Florida"}
-  %option{value: "Georgia"}
-  %option{value: "Hawaii"}
-  %option{value: "Idaho"}
-  %option{value: "Illinois"}
-  %option{value: "Indiana"}
-  %option{value: "Iowa"}
-  %option{value: "Kansas"}
-  %option{value: "Kentucky"}
-  %option{value: "Louisiana"}
-  %option{value: "Maine"}
-  %option{value: "Maryland"}
-  %option{value: "Massachusetts"}
-  %option{value: "Michigan"}
-  %option{value: "Minnesota"}
-  %option{value: "Mississippi"}
-  %option{value: "Missouri"}
-  %option{value: "Montana"}
-  %option{value: "Nebraska"}
-  %option{value: "Nevada"}
-  %option{value: "New Hampshire"}
-  %option{value: "New Jersey"}
-  %option{value: "New Mexico"}
-  %option{value: "New York"}
-  %option{value: "North Carolina"}
-  %option{value: "North Dakota"}
-  %option{value: "Ohio"}
-  %option{value: "Oklahoma"}
-  %option{value: "Oregon"}
-  %option{value: "Pennsylvania"}
-  %option{value: "Rhode Island"}
-  %option{value: "South Carolina"}
-  %option{value: "South Dakota"}
-  %option{value: "Tennessee"}
-  %option{value: "Texas"}
-  %option{value: "Utah"}
-  %option{value: "Vermont"}
-  %option{value: "Virginia"}
-  %option{value: "Washington"}
-  %option{value: "West Virginia"}
-  %option{value: "Wisconsin"}
-  %option{value: "Wyoming"}
+  / %form
+  /   Be Featured!
+  /   Enter a recipe you would like to share with people.
+  /   %input{type: :text, name: :ingredients, placeholder: "ingredients"}
+  /   %input{type: :text, name: :instructions, placeholder: "instructions"}
+
+  /   %a.button{href: :save}
+  /     %i.icon-food
+  /     %label share this recipee
