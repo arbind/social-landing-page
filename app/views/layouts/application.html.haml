@@ -8,9 +8,10 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body.public{lang: :en}
-    %header
+    .header
       = render '/shared/logo'
 
-    = yield
+    .content
+      = yield
 
     %footer

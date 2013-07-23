@@ -1,3 +1,8 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
 /*    Mobile Layout: 320px.
     Gutters: 24px.
     Outer margins: 34px.
@@ -7,9 +12,6 @@ cols    1     2      3
 px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
-
-  body {
-    width: 252px;
-    padding: 48px 34px 60px;
-  }
+  html { font-size: 34%;   }
+  body { min-width: 300px; }
 }

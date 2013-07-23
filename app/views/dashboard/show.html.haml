@@ -2,17 +2,18 @@
   .food-truck
     .name= current_user.name
 
-  - if 1 ==current_user.signins
-    .thank-you Thanks for registering!
-  - else
-    .thank-you Thanks for checking back!
-  .launching-soon We'll be launching soon.
-  = render 'shared/twitter_follow_button'
-  .keep-in-touch We'll tweet all about it as we get closer to launch.
-  .value When you park, our app will send notifications
-  .value to food truck lovers in an 8 mile radius.
-  .send-feedback We'd love to hear about features you'd like.
-  .tweet-us Just tweet them to us.
+    - if 1 ==current_user.signins
+      .thank-you Thanks for registering!
+    - else
+      .thank-you Thanks for checking back!
+  .launching-soon
+    .info Our app is launching soon.
+
+  .promise
+    .info follow us on Twitter
+    = render 'shared/twitter_follow_button'
+    .info we'll send notifications
+    .info to people in an 8mi radius
 
   / .parking-spots
   /   @#{current_user.screen_name} Parking Spots:

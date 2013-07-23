@@ -1,77 +1,78 @@
-
 .food-truck-me-logo {
-  position: relative;
-  margin: 0 auto;
-  overflow: visible;
-  border:1px solid #93cdf7;
-  padding: 2px;
-  text-decoration:none;
-  display:inline-block;
-  background-color: #f2f9fe;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f9fe), to(#d6f0fd));
-  background-image: -webkit-linear-gradient(top, #f2f9fe, #d6f0fd);
-  background-image: -moz-linear-gradient(top, #f2f9fe, #d6f0fd);
-  background-image: -ms-linear-gradient(top, #f2f9fe, #d6f0fd);
-  background-image: -o-linear-gradient(top, #f2f9fe, #d6f0fd);
-  background-image: linear-gradient(to bottom, #f2f9fe, #d6f0fd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f9fe, endColorstr=#d6f0fd);
-  -moz-border-radius    : 8px;
-  -webkit-border-radius : 8px;
-  border-radius         : 8px;
-  -webkit-transition: background-color 0.25s ease-in-out, color 0.3s ease-in-out;
-  -moz-transition   : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
-  -ms-transition    : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
-  -o-transition     : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
-  transition        : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
-  color: #3EA7E1;
-  .icon-truck {
+  display: inline-block;
+  .canvas {
     position: relative;
-    z-index: 0;
-    font-size: 80px;
-    height: 80px;
-    float: left;
-    color: #93cdf7;
-  }
-  .stars {
-    position: relative;
-    z-index: 0;
-    font-size: 10px;
-    top: 10px;
-    display:inline;
-    padding: 1px;
-    float: left;
-    color: #E30E0E;
-    &:last-child {
-      margin-right: 8px;
+    overflow: visible;
+    padding: 2px;
+    text-decoration:none;
+    display:inline-block;
+    border:1px solid #93cdf7;
+    background-color: #f2f9fe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f9fe), to(#d6f0fd));
+    background-image: -webkit-linear-gradient(top, #f2f9fe, #d6f0fd);
+    background-image: -moz-linear-gradient(top, #f2f9fe, #d6f0fd);
+    background-image: -ms-linear-gradient(top, #f2f9fe, #d6f0fd);
+    background-image: -o-linear-gradient(top, #f2f9fe, #d6f0fd);
+    background-image: linear-gradient(to bottom, #f2f9fe, #d6f0fd);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f9fe, endColorstr=#d6f0fd);
+    -moz-border-radius    : 8px;
+    -webkit-border-radius : 8px;
+    border-radius         : 8px;
+    -webkit-transition: background-color 0.25s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition   : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
+    -ms-transition    : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
+    -o-transition     : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
+    transition        : background-color 0.25s ease-in-out, color 0.3s ease-in-out;
+    color: #3EA7E1;
+    .icon-truck {
+      position: relative;
+      z-index: 0;
+      font-size: 80px;
+      height: 80px;
+      float: left;
+      color: #93cdf7;
     }
-    .icon-star {
-      margin: 2px 0px;
-      display:block;
+    .stars {
+      position: relative;
+      z-index: 0;
+      font-size: 10px;
+      top: 10px;
+      display:inline;
+      padding: 1px;
+      float: left;
+      color: #E30E0E;
+      &:last-child {
+        margin-right: 8px;
+      }
+      .icon-star {
+        margin: 2px 0px;
+        display:block;
+      }
     }
-  }
-  .badge {
-    position: absolute;
-    z-index: 1;
-    top: -14px;
-    right: -14px;
-    background:             radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
-    background:    -moz-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
-    background:     -ms-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
-    background:      -o-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
-    background: -webkit-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
-    background-color: #E30E0E;
-    border: 2px solid white;
-    -moz-border-radius    : 50%;
-    -webkit-border-radius : 50%;
-    border-radius: 50%;
-    box-shadow: 1px 1px 1px black;
-    color: white;
-    font: bold 18px/12px Helvetica, Verdana, Tahoma;
-    padding: 8px 8px 2px 8px;
-    text-align: center;
-    height: 20px;
-    min-width: 14px;
-  }
-  .food-truck-me {
-    font: 12px/14px "Lucida Grande";
+    .badge {
+      position: absolute;
+      z-index: 1;
+      top: -14px;
+      right: -14px;
+      background:             radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+      background:    -moz-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+      background:     -ms-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+      background:      -o-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+      background: -webkit-radial-gradient( 1px -11px, circle, white 8%, #E30E0E 26px );
+      background-color: #E30E0E;
+      border: 2px solid white;
+      -moz-border-radius    : 50%;
+      -webkit-border-radius : 50%;
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px black;
+      color: white;
+      font: bold 18px/12px Helvetica, Verdana, Tahoma;
+      padding: 8px 8px 2px 8px;
+      text-align: center;
+      height: 20px;
+      min-width: 14px;
+    }
+    .food-truck-me {
+      font: 12px/14px "Lucida Grande";
+    }
   }
 }

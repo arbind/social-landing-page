@@ -36,17 +36,17 @@
     font-weight: normal;
     font-style: normal;
     display: inline-block;
-    font-size       : 24px;
-    padding         : 8px;
-    top             : 2px;
+    font-size       : 2.4rem;
+    padding         : 0.8rem;
+    top             : 0.2rem;
     z-index         : 2;
     color           : #93cdf7;
     border-right    : 2px solid #C6E9ED;
     @include transition-all(0.1s);
   }
   label {
-    font            : normal 24px "Lucida Grande";
-    padding         : 0 23px 0 8px;
+    font            : normal 2.4rem "Lucida Grande";
+    padding         : 0 2.3rem 0 0.8rem;
     text-align      : right;
     color           : #495f66;
     @include transition-all(0.4s);
@@ -54,7 +54,7 @@
 
   &:hover{
     cursor: pointer;
-    border:1px solid #93cdf7;
+    border: 1px solid #93cdf7;
     i   {
       cursor: pointer;
       color: #3EA7E1;
