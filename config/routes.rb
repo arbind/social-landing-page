@@ -6,6 +6,7 @@ SocialLandingPage::Application.routes.draw do
   get   '/auth/:provider/callback'  => 'root#oauth_sign_in'
 
   get 'ping'                        => 'root#ping'          , as: :ping
+  get 'privacy_policy'              => 'root#privacy_policy', as: :privacy_policy
   get 'dashboard'                   => 'dashboard#show'     , as: :dashboard
 
 end

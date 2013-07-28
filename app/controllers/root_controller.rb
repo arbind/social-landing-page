@@ -10,6 +10,9 @@ class RootController < ApplicationController
 
   def ping() render json: :pong end
 
+  def privacy_policy
+  end
+
   protected
 
   def sign_in

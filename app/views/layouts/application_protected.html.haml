@@ -10,12 +10,6 @@
   %body.protected{lang: :en}
     .header
       = render '/shared/logo'
-      / %a.button{href: signout_path, title: 'logout'}
-      /   %i.icon-angle-left
-      /   %label sign out
-      %p
-      - flash.each do |name, msg|
-        %div(class=name)= msg
 
     .content
       = yield
