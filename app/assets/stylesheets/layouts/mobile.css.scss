@@ -12,6 +12,13 @@ cols    1     2      3
 px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
-  html { font-size: 34%;   }
-  body { min-width: 300px; }
+  html { font-size: 38%;   }
+  body { min-width: 310px; }
+  body {
+    section {
+      .description {
+        margin: 0 auto;
+      }
+    }
+  }
 }

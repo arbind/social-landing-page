@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
-  rescue_from Exception, :with => :redirect_to_signup_path
+  # rescue_from Exception, :with => :redirect_to_signup_path
 
   def current_user
     @current_user ||= TwitterUser.where(twitter_id: session[:current_user]).first

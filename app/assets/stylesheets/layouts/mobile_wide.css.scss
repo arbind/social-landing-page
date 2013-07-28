@@ -7,48 +7,46 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  html     { font-size: 34%;   }
+  html     { font-size: 38%;   }
   body     { min-width: 480px; }
-  .food-truck-me-logo {
-    position: fixed;
-    left: 6rem;
-    top: 2rem;
-  }
-  .overview {
-    position: fixed;
-    right: 6rem;
-    top: 2rem;
-    margin: 0;
-  }
-  .cta {
-    position: fixed;
-    right: 6rem;
-    top: 16rem;
-    margin: 0;
-  }
-
-  .food-truck {
-    position: fixed;
-    left: 0rem;
-    top: 13.5rem;
-    width: 40%;
-    .name {
-      font: bold 4.0rem/4.0rem "Helvetica Neue",Arial,sans-serif !important;
+  body {
+    .header {
+      position:fixed;
+      top: 0;
+      left: 3.5rem;
+      margin: 2rem 0;
+      width: 140px;
     }
-    .thank-you {
-      font: bold 2.4rem/2.4rem "Helvetica Neue",Arial,sans-serif;
+    .content {
+      min-width: 60%;
+      float:right;
+      section {
+        .headline {
+          margin: 1rem auto 0 auto;
+        }
+        .description {
+          margin: 0;
+        }
+        .promise {
+          margin: 0 0 1.0rem 0;
+        }
+        .cta {
+          margin-top: 2rem;
+        }
+        .thank-you, .launching-soon {
+          position:fixed;
+          left: 2.0rem;
+          max-width: 38%;
+          min-width: 140px;
+          font: normal 2.4rem/3.0rem "Lucida Grande";
+        }
+        .thank-you {
+          top: 134px;
+        }
+        .launching-soon {
+          top: 160px;
+        }
+      }
     }
-  }
-  .promise {
-    width: 50%;
-    position: fixed;
-    right: 3rem;
-    top: 2rem;
-  }
-  .launching-soon {
-    position: fixed;
-    right: 3rem;
-    top: 16.0rem;
-    width: 50%;
   }
 }

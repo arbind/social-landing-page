@@ -23,7 +23,7 @@
 }
 
 .button {
-  border:1px solid #bee1fa;
+  border:3px solid #93cdf7;
   padding: 4px;
   text-decoration:none;
   display:inline-block;
@@ -46,15 +46,15 @@
   }
   label {
     font            : normal 2.4rem "Lucida Grande";
-    padding         : 0 2.3rem 0 0.8rem;
+    padding         : 0 1.0rem 0 0.8rem;
     text-align      : right;
-    color           : #495f66;
+    color           : #293f46;
     @include transition-all(0.4s);
   }
 
   &:hover{
     cursor: pointer;
-    border: 1px solid #93cdf7;
+    border: 3px solid #93cdf7;
     i   {
       cursor: pointer;
       color: #3EA7E1;
@@ -62,7 +62,7 @@
     }
     label {
       cursor: pointer;
-      color: #293f46;
+      color: #437da7;
     }
   }
   &.signout {
