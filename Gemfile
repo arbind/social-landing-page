@@ -4,8 +4,9 @@ ruby "2.0.0"
 gem 'rails'           , '~>4.0.0'
 gem 'thin'            , group: :production
 
-gem 'rails_12factor'  , group: :production
+gem 'rails_12factor'  , group: [:production, :staging]
 
+gem 'pg'
 gem 'mongoid'         , github: 'mongoid/mongoid'
 gem 'eventmachine'
 
